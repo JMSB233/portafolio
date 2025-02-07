@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="../styles/style2.css" /> -->
+    <link rel="stylesheet" href="../styles/style.css">
+  </head>
+  <body>
+    
+  <div class="wrapper">
+    <header class="head">
+      <nav class="nav__barra">
+        <h2 class="nav__name">&lt; JMSB &gt;</h2>
+        <ul class="nav__menu">
+          <li><a class="nav__item" href="#main__info">Perfil</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#formacion">Formación</a></li>
+          <li><a href="#referencias">Referencias</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="main__info" id="main__info">
+        <div class="main__text">
+            <h2>JHON MARIO SÁNCHEZ B.</h2>
+            <br>
+            <p class="main__descripcion">Desarrollador full stack en formación, con experiencia en el desarrollo web utilizando HTML, CSS y JavaScript. Manejo de bases de datos relacionales como SQL y PostgreSQL, experiencia en el manejo de herramientas de control de versiones como Git y GitHub. Además, he trabajado con tecnologías API REST,  y así mismo con herramientas como Postman para garantizar la calidad y funcionalidad de las integraciones, actualización de microservicios con springboot y conocimiento en despliegue continuo <br><br> Mi enfoque está en aprender y mejorar continuamente mis habilidades técnicas, con el objetivo de contribuir de manera efectiva al desarrollo de software de calidad. Estoy abierto a nuevos retos y oportunidades para seguir creciendo en el ámbito del desarrollo web y la tecnología.</p>
+            <a download="Hoja_de_vida_JMS.pdf" href="../assets/pdfs/Hoja_de_vida_JMS.pdf"><button class="download-cv">Descargar CV</button></a>
+          </div>  
+          <img class="main__img" src="../assets/FotoDePerfil.png" alt="Foto-perfil">
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="proyectos" id="proyectos">
+          <h2 class="proyectos__titulo">PROYECTOS</h2>
+          <div class="tabs">
+            <button class="tab-link active" data-tab="proyecto1">Proyecto 1</button>
+            <button class="tab-link" data-tab="proyecto2">Proyecto 2</button>
+            <button class="tab-link" data-tab="proyecto3">Proyecto 3</button>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane active" id="proyecto1">
+                <h3>Cálculo de Pensión.</h3>
+                <p>Se realizo ejercicio práctico para calcular si una persona tiene derecho a pensión según su edad y la cantidad de semanas que tuviera cotizadas
+                  hasta ese momento, dicho ejercicio se realizó por medio de HTML y css.</p>
+            </div>
+            <div class="tab-pane" id="proyecto2">
+                <h3>Web Service</h3>
+                <p>Se participó en el desarrollo de un WebService entre una compañía y una Coorporación para generar la liquidación de documentos de cobro,
+                  en dicho proyecto se utilizo javascript, nodeJs, base de datos relacionales en PostgreSQL y control de versiones en Git.</p>
+            </div><div class="tab-pane" id="proyecto3">
+                <h3>Colores</h3>
+                <p>Se desarrolló ejercicio práctico para obtener un color de manera aleatoria por medio del sistema de numeración hexadecimal cada vez que se
+                  presionaba un botón, para este proyecto se implemento tecnologías como HTML, css y JavaScript.</p>
+            </div>
+        </div>
+        </section>
+        <div class="divider"></div>
+
+        <div class="container">
+          <h2>CONSUMO DE API</h2>
+          <br>
+          <h2>Buscar País:</h2>
+          <input type="text" id="country-input" placeholder="Escribe el nombre de un país...">
+          <button onclick="getCountryInfo()">Buscar</button>
+      
+          <div id="country-info">
+            <p id="continent"></p>
+            <p id="capital"></p>
+            <p id="languages"></p>
+          </div>
+      
+          <p id="error-message"></p>
+        </div>
+
+        <div class="divider"></div>
+
+        <section id="experiencia">
+          <h2 class="experiencia__titulo">EXPERIENCIA</h2>
+          <div class="experiencia__item">
+            <h3 class="experiencia__puesto">Desarrollador Backend Junior</h3>
+            <p class="experiencia__empresa">Datasoft Ingenieria Ltda.</p>
+            <p class="experiencia__fechas">Mayo 2024 - Actualmente.</p>
+            <br>
+            <p class="experiencia__descripcion"> Brindar apoyo al área de Desarrollo backend, incluyendo la 
+              generación y publicación de microservicios para diferentes clientes, así 
+              como la actualización de certificados en páginas web, asegurando su 
+              correcta implementación y funcionamiento. Además, colaborar en el 
+              desarrollo e integración de WebServices para bancos o entidades 
+              específicas, utilizando lenguajes como JavaScript, TypeScript, Java, 
+              Node.js y con manejo de herramientas de versionamiento 
+              como GitLab, garantizando un control eficiente de versiones y una 
+              colaboración fluida dentro del equipo de desarrollo. </p>
+        </div>
+            <div class="experiencia__item">
+              <h3 class="experiencia__puesto">Analista de Configuración</h3>
+              <p class="experiencia__empresa">Datasoft Ingenieria Ltda.</p>
+              <p class="experiencia__fechas">Marzo 2024 - Mayo 2024</p>
+              <br>
+              <p class="experiencia__descripcion">Configurar diferentes tipos de formularios que se implementan 
+              en la compañía los cuales constan de gran variedad de menús para la interacción de los clientes
+              según la necesidad de los mismos, para la ejecución de los mismos se usa la herramienta de PostgreSQL y php para generar reportes en PDF si es el caso.</p>
+          </div>
+
+        </section>
+
+        <div class="divider"></div>
+
+        <section id="formacion">
+          <h2 class="formacion__titulo">FORMACIÓN COMPLEMENTARIA</h2>
+            <div class="formacion__item">
+              <h3 class="formacion__nombre">Curso Práctico de SQL.</h3>
+              <p class="formacion__fecha">Platzi - 2023</p>
+              <button class="formacion__certificado" data-src="../assets/pdfs/diploma-practico-sql.pdf">Ver Certificado</button>
+            </div>
+            <div class="formacion__item">
+              <h3 class="formacion__nombre">Curso de Fundamentos de Bases de Datos.</h3>
+              <p class="formacion__fecha">Platzi - 2023</p>
+              <button class="formacion__certificado" data-src="../assets/pdfs/diploma-fundamentos bases de datos.pdf">Ver Certificado</button>
+            </div>
+            <div class="formacion__item">
+              <h3 class="formacion__nombre">Curso de Análisis de Negocios para Ciencia de Datos.</h3>
+              <p class="formacion__fecha">Platzi - 2023</p>
+              <button class="formacion__certificado" data-src="../assets/pdfs/diploma-negocios-data-science.pdf">Ver Certificado</button>
+            </div>
+            <div class="formacion__item">
+              <h3 class="formacion__nombre">Curso Profesional de Git y GitHub</h3>
+              <p class="formacion__fecha">Platzi - 2023</p>
+              <button class="formacion__certificado" data-src="../assets/pdfs/diploma-git.pdf">Ver Certificado</button>
+            </div>
+            <div class="formacion__item">
+              <h3 class="formacion__nombre">Curso de Pensamiento Lógico: Algoritmos y Diagramas de Flujo.</h3>
+              <p class="formacion__fecha">Platzi - 2023</p>
+              <button class="formacion__certificado" data-src="../assets/pdfs/diploma-pensamiento-logico.pdf">Ver Certificado</button>
+            </div>
+            <div class="formacion__item">
+              <h3 class="formacion__nombre">Curso de Programación Básica.</h3>
+              <p class="formacion__fecha">Platzi - 2023</p>
+              <button class="formacion__certificado" data-src="../assets/pdfs/diploma-programacion-basica.pdf">Ver Certificado</button>
+            </div>
+        </section>
+        <div class="divider"></div>
+
+        <section id="referencias">
+          <h2 class="referencias__titulo">REFERENCIAS</h2>
+          <div class="referencias">
+            <div class="referencias__item">
+              <h3 class="referencias__nombre">Catalina Arias Buitrago</h3>
+              <p class="referencias__cargo">Jefe de Talento Humano - Comestibles MAPPY</p>
+              <address class="referencias__contacto">Tel: 320 6982816</address>
+            </div>
+            <div class="referencias__item">
+              <h3 class="referencias__nombre">Jose Omar García</h3>
+              <p class="referencias__cargo">Contador - Specialized</p>
+              <address class="referencias__contacto">Tel: 312 8856101</address>
+            </div>
+          </div>
+        </section>
+        <div class="divider"></div>
+
+        <section id="contacto">
+          <h2 class="contacto__titulo">CONTACTO</h2>
+          <p class="contacto__info">Contáctame por medio de: </p>
+          <ul class="contacto__opciones">
+            <li class="contacto__item">E-mail: jmsb233@gmail.com</li>
+            <li class="contacto__item">LinkedIn: <a href="https://www.linkedin.com/in/jhon-mario-sanchez-buitrago-3ba889261/" target="_blank">Jhon Mario Sánchez Buitrago.</a></li>
+            <li class="contacto__item">Celular: +57 313 7387939</li>
+          </ul>
+        </section>
+
+
+
+    </main>
+    <footer class="footer">
+      <p class="footer__info">&copy; 2024 Jhon Mario. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../script.js"></script>
+  </div>
+</body>
+</html>
